@@ -2,33 +2,39 @@
 
 html {
     font-family: 'Playfair Display', serif;
+    text-align: center;
 }
 
-h1 {
-    text-align: center;
+h1 img {
+    width: 48px;
 }
 
 .actor-selection {
-    text-align: center;
     font-size: 32px;
 }
 
 #actor-select {
 
+
     appearance: none;
-    border-style: none;
     background-color: inherit;
-    text-decoration: underline;
-    color: black;
+    border-style: none;
+    color: maroon;
+    text-align: center;
 }
 
 #actor-select:hover {
-    color: black;
+    color: maroon;
 }
 
 
 
 
 .script {
-    text-align: center;
+    width: fit-content;
+    margin: 0 auto;
 }
+
+.stanza-title {}
+
+.stanza {}
