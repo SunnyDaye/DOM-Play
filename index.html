@@ -3,7 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/normalize.css">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DOM Play</title>
@@ -16,14 +18,16 @@
         <h1>Dom Play: A play script with simple actor-based script highlighting</h1>
     </header>
     <main>
+        <div class="actor-selection">
+            <label for="actor-select">Please choose an</label>
+            <select name="actors" id="actor-select">
+                <option value="">-----actor-----</option>
+                <option class="actor" value="laertes">Laertes</option>
+                <option class="actor" value="ophelia">Ophelia</option>
+                <option class="actor" value="lord-polonius">Lord Polonius</option>
+            </select>
+        </div>
 
-        <label for="actor-select">Choose an actor to see their script: </label>
-        <select name="actors" id="actor-select">
-            <option value="">--Please choose an option--</option>
-            <option value="actor1">Actor 1</option>
-            <option value="actor2">Actor 2</option>
-            <option value="actor3">Actor 3</option>
-        </select>
 
 
         <div class="script" id="script">
@@ -181,6 +185,7 @@
 
         document.getElementById("css-checker").setAttribute("href", "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);  
     </script>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
